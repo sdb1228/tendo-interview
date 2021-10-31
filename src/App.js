@@ -1,7 +1,6 @@
 import './App.css';
 import { Typography } from '@mui/material';
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { useMutation, } from 'react-query';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -57,7 +56,6 @@ function App(props) {
 
   return (
     <>
-      <CssBaseline />
       <ProgressBar progress={(question / props.surveyQuestions.questions.length) * 100} />
       <div className="App">
         <Typography variant="h1" component="div" gutterBottom>{props.patient.entry[0].resource.name[0].given[0]}'s {new Date(props.patient.timestamp).toLocaleDateString()} Visit</Typography>
