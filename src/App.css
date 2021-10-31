@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.numberCircle {
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  padding: 8px;
+  background: #fff;
+  border: 2px solid #666;
+  color: #666;
+  font: 32px Arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  height: 100%;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.svg_icons {
+  transform: scale(2.5);
+}
+
+#root {
+  height: 100vh;
+}
+
+.mainContentContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent {
+  height: 100%;
+  width: 900px;
+  padding-top: 40px;
+}
+
+.progressBar {
+  background: #1DA598;
+  height: 100%;
+  border-radius: inherit;
+  transition: width .2s ease-in;
+}
+
+.progressBarContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 100vw;
+}
+
+.ratingLineContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.submitButton {
+  padding-top: 80px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.App {
+  padding: 0 40px 0 40px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+}
+
+.ratingLineContainer #one.selected, .ratingLineContainer #one:hover {
+  border: 2px solid #bf1a33;
+  color: #bf1a33;
+}
+
+.ratingLineContainer #two:hover, .ratingLineContainer #two.selected {
+  border: 2px solid #c93b25;
+  color: #c93b25;
+}
+
+.ratingLineContainer #three:hover, .ratingLineContainer #three.selected {
+  border: 2px solid #ce5613;
+  color: #ce5613;
+}
+
+.ratingLineContainer #four:hover, .ratingLineContainer #four.selected {
+  border: 2px solid #cf7000;
+  color: #cf7000;
+}
+
+.ratingLineContainer #five:hover, .ratingLineContainer #five.selected {
+  border: 2px solid #cc8900;
+  color: #cc8900;
+}
+
+.ratingLineContainer #six:hover, .ratingLineContainer #six.selected {
+  border: 2px solid #c4a100;
+  color: #c4a100;
+}
+
+.ratingLineContainer #seven:hover, .ratingLineContainer #seven.selected {
+  border: 2px solid #b8b900;
+  color: #b8b900;
+}
+
+.ratingLineContainer #eight:hover, .ratingLineContainer #eight.selected {
+  border: 2px solid #a8cf26;
+  color: #a8cf26;
+}
+
+.ratingLineContainer #nine:hover, .ratingLineContainer #nine.selected {
+  border: 2px solid #91e54d;
+  color: #91e54d;
+}
+
+.ratingLineContainer #ten:hover, .ratingLineContainer #ten.selected {
+  border: 2px solid #6efa75;
+  color: #6efa75;
 }

@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { QueryClient, QueryClientProvider } from 'react-query'
+//Server side rendered
+import * as patientData from './api/patientData.json';
+import * as surveyQuestionsdata from './api/surveyQuestions.json';
+
+const queryClient = new QueryClient()
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <App patient={patientData.default} surveyQuestions={surveyQuestionsdata.default} />
+    </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
