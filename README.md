@@ -1,7 +1,6 @@
-TODO
-- Tests
+Things to Add:
+- Server for the app
 - mobile responsive
 - Comment
 - Security around survey button click
-- Architecture Diagram
-- Things I would have done more/differently
+- Deploy to AWS
