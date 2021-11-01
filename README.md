@@ -4,3 +4,4 @@ Things to Add:
 - Comment
 - Security around survey button click
 - Deploy to AWS
+- Styled components
